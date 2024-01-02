@@ -23,7 +23,7 @@ void solve() {
    while(ans % 10 != d){
       ans++;
    }
-   cout << ans <<;
+   cout << ans ;
 
 }
 
