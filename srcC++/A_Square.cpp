@@ -13,7 +13,7 @@ using namespace std;
 
 #define ll  long long
 #define br  '\n'
-
+//Solucionado
 int t;
 void solve() {
    cin >> t;
