@@ -16,39 +16,33 @@ using namespace std;
 #define br  '\n'
 
 
-int cnt = 1 ;
-int n = 1;
+
 void solve() {
+      //Solución por josuerom :)
+      int cnt = 0, ans = 0, n;
       cin >> n;
-      //cout << n <<"  <--- valor n";
-      vector<int> a;
-      vector<int> lenght;
-      for (int i = 0; i < n; i++) {
-            int ai;
-            cin >> ai;
-            a.push_back(ai);
+      vector<int> a(n);
+      cin >> a[0];
+      for (int i = 1; i < n; i++)
+      {
+            cin >> a[i];
+            //Si a[i]  es mayor o igual que a[i-1] 
+            if (a[i] >= a[i - 1])
+            //Sume 1
+                  cnt++;
+            else
+            //Sino contador es igual a 0
+                  cnt = 0;
+            //Aca comprueba el maximo se cada contador y obtiene el maximo  
+            ans = max(cnt, ans);
       }
-      // for (int e : a)
-      //       cout << e << " ";
-
-      for (int j = 0; j < n; j++) {
-            //cout << "Entro" << br;
-            if( a[j+1] >= a[j]){
-                 // cout << "Entro" <<clear br;
-                  cnt += 1;
-            }else{
-                  lenght.push_back(cnt);
-                  cnt = 1;
-                  continue;
-            }
-      }
-
-      //Ordenas de menor a mayor
-      sort(lenght.begin(),lenght.end());
-      int final = lenght.size();
-      //cout << "Solución: " <<br;
-      cout << lenght[final-1] << br;
-      
+      // cout << "Ans: " << ans << endl;
+      if (ans == 0)
+      //Si es igual a cero entonces es 1
+            cout << 1 << endl;
+      else
+      //sino el reusltado le suma 1
+            cout << ans + 1 << endl;
 }
 
 int main() {
