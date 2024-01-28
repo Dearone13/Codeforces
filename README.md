@@ -8,5 +8,6 @@
 <li ><a href ="https://github.com/Dearone13/Codeforces/blob/main/srcC%2B%2B/A_Square.cpp" target ="_blank">A. Square - 1929 </a></li>
 <li ><a href ="https://github.com/Dearone13/Codeforces/blob/main/srcC%2B%2B/A_Even_Odds.cpp" target ="_blank">A. Even Odds - 318</a></li>
 <li ><a href ="https://github.com/Dearone13/Codeforces/blob/main/srcC%2B%2B/A_Keyboard.cpp" target ="_blank">A. Keyboard - 474 </a></li>
+<li ><a href ="https://github.com/Dearone13/Codeforces/blob/main/srcC%2B%2B/A_Kefa_and_First_Steps.cpp" target ="_blank">A. Kefa and First Steps- 580 </a></li>
 </ul>
 </section>
