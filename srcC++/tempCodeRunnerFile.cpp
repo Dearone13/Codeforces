@@ -1,2 +1,3 @@
-
-   for(auto &e : vp) cout << e.first << br;
+  for (int number : numbers )
+      cout << number << " ";
+   cout << br;
